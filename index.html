@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+
+    <div class="app-container">
+      
+      <div class="input-container">
+        <div class="day-input-container grid-item">
+          <label for="day" >Day</label>
+          <input type="number" data-type="day" id="day" name="day" min="1" max="31">
+          <p id="date-error-message" class="error-message">Must be a valid day</p>
+        </div>
+        <div class="month-input-container grid-item">
+          <label for="month" >Month</label>
+          <input type="number" data-type="month" id="month" name="month" min="1" max="12">
+          <p class="error-message">Must be a valid month</p>
+        </div>
+        <div class="year-input-container grid-item">
+          <label for="year" >Year</label>
+          <input type="number" data-type="year" id="year" name="year" min="1900" max="2023">
+          <p class="error-message">Must be in the past</p>
+        </div>
+        <div class="btn-container">
+        <button id="btn">
+          <img src="assets/images/icon-arrow.svg" alt="arrow-button">
+        </button>
+      </div>
+      </div>
+      <div class="output-container">
+        <div class="text-container">
+          <h1><span id="year-output">38</span>years</h1>
+          <h1><span id="month-output">3</span>months</h1>
+          <h1><span id="day-output">26</span>days</h1>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oskar Fritzner</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
